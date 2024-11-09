@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Heart, Activity, ChevronRight, Stethoscope, HeartPulse  } from 'lucide-react';
+import { Heart, Activity, ChevronRight, Stethoscope, HeartPulse } from 'lucide-react';
 import Chatbot from './Chatbot';
 import DarkModeToggle from './DarkModeToggle';
 
@@ -51,8 +51,8 @@ const Dashboard = () => {
     >
 
       <div className="absolute inset-0 bg-black opacity-40 dark:opacity-60"></div>
-       {/* Dark mode toggle */}
-       <header className="absolute top-4 right-4 z-20">
+      {/* Dark mode toggle */}
+      <header className="absolute top-4 right-4 z-20">
         <DarkModeToggle />
       </header>
 
@@ -71,28 +71,36 @@ const Dashboard = () => {
         {/* Model Cards Section */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 mb-16">
           <DashboardCard
-            icon={ Stethoscope }
+            icon={Stethoscope}
             title="Diabetes Prediction"
             description="Advanced AI model that analyzes various health metrics to predict diabetes risk with high accuracy. Get instant risk assessment and preventive recommendations."
             link={import.meta.env.VITE_DIABETES_PREDICTION_URL} // Using the environment variable
             color="bg-red-500"
           />
           <DashboardCard
-            icon={ Activity }
+            icon={Activity}
             title="Breast Cancer Prediction"
             description="State-of-the-art breast cancer risk assessment tool utilizing machine learning for early detection and prevention strategies."
             link={import.meta.env.VITE_BREAST_CANCER_PREDICTION_URL}
             color="bg-pink-500"
           />
           <DashboardCard
-            icon={ HeartPulse }
+            icon={HeartPulse}
             title="Heart Disease Prediction"
             description="Comprehensive heart health analysis using multiple parameters to evaluate cardiovascular disease risk and provide actionable insights."
             link={import.meta.env.VITE_HEART_DISEASE_PREDICTION_URL}
             color="bg-blue-500"
           />
 
-          
+          <DashboardCard
+            icon={Heart}
+            title="Lung Cancer Prediction"
+            description="AI-powered lung cancer risk prediction using advanced machine learning models. Get early risk assessments and preventive recommendations."
+            link={import.meta.env.VITE_LUNG_CANCER_PREDICTION_URL}
+            color="bg-yellow-500"
+          />
+
+
         </div>
 
         {/* Chatbot Section */}
