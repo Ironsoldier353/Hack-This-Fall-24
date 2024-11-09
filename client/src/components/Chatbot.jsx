@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import '../Chatbot.css';
+import { MessageSquare } from 'lucide-react';
 
 
 const Chatbot = () => {
@@ -110,6 +111,7 @@ const Chatbot = () => {
     const handleOpen = () => {
         setIsVisible(true);
     };
+    
 
     return (
         <>
@@ -141,8 +143,9 @@ const Chatbot = () => {
                     </div>
                 </div>
             ) : (
-                <div className="open-button z-[1000]" onClick={handleOpen}>
-                    <span className="material-symbols-outlined">chat</span>
+                <div className="open-chatbot-button" onClick={handleOpen}>
+                    <MessageSquare className="chat-icon" size={24} />
+                    <span className="chat-button-text">Use ME as your CHATBOT!👋</span>
                 </div>
             )}
         </>
