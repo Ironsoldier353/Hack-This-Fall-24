@@ -38,7 +38,8 @@ const LandingPage = () => {
                     <div className="flex items-center justify-between">
                         <div className="logo flex items-center text-lg font-semibold text-gray-700 dark:text-gray-300">
                             <img src="./logo.png" alt="" className="h-8 md:h-10 mr-2" />
-                            <span className="text-2xl md:text-3xl font-bold text-teal-500 dark:text-teal-400">HealthPredict</span>
+                            <span className="text-4xl md:text-3xl font-bold text-teal-500 dark:text-teal-400">PredictAura
+                            </span>
                         </div>
                         <DarkModeToggle />
                     </div>

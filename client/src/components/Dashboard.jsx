@@ -61,10 +61,10 @@ const Dashboard = () => {
 
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">
-            Disease Prediction Models
+          AI-Powered Disease Prediction
           </h1>
           <p className="text-white text-base md:text-lg max-w-2xl mx-auto">
-            Advanced AI-powered health prediction models to help identify potential health risks early
+          AI-powered health prediction models are transforming healthcare by identifying potential risks early, enabling proactive, personalized care. These models unlock insights that drive preventive measures and improve patient outcomes.
           </p>
         </div>
 
