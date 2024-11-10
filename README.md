@@ -76,7 +76,7 @@ To run this project on your local machine, follow these steps:
   4. Run locally:
      ```bash
      npm run dev
-Now open http://localhost:5173 or anyother port shown in terminal.
+Now open http://localhost:5173 or any other port shown in terminal.
 
 ## Tech Stack
 
